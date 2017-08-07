@@ -1,0 +1,3 @@
+%__nodejs8_provides  %{_rpmconfigdir}/nodejs8.prov
+%__nodejs8_requires  %{_rpmconfigdir}/nodejs8.req
+%__nodejs8_path  /usr/lib.*/node_modules/.*/package\\.json$
