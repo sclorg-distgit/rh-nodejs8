@@ -6,7 +6,7 @@
 %global scl %{scl_name_prefix}%{scl_name_base}%{scl_name_version}
 
 %scl_package %scl
-%global install_scl 0
+%global install_scl 1
 
 # do not produce empty debuginfo package
 %global debug_package %{nil}
@@ -14,7 +14,7 @@
 Summary: %scl Software Collection
 Name: %scl_name
 Version: 3.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 
 Source1: macros.nodejs
 Source2: nodejs.attr
@@ -174,6 +174,9 @@ mkdir -p %{buildroot}%{_datadir}/licenses/
 %{_root_sysconfdir}/rpm/macros.%{scl_name_base}-scldevel
 
 %changelog
+* Tue Jun 27 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 3.0-2
+- Enable installing the collection
+
 * Mon Jun 19 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 3.0-1
 - SCL 3.0, nodejs v8.x
 
