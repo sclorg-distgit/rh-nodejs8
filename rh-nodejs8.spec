@@ -14,7 +14,7 @@
 Summary: %scl Software Collection
 Name: %scl_name
 Version: 3.0
-Release: 2%{?dist}
+Release: 3%{?dist}
 
 Source1: macros.nodejs
 Source2: nodejs.attr
@@ -174,6 +174,9 @@ mkdir -p %{buildroot}%{_datadir}/licenses/
 %{_root_sysconfdir}/rpm/macros.%{scl_name_base}-scldevel
 
 %changelog
+* Mon Jul 03 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 3.0-3
+- Fix typo in symlink script
+
 * Tue Jun 27 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 3.0-2
 - Enable installing the collection
 
